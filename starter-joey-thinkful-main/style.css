@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+  }
+  header {
+    background-color: #0B1C51; /*sets background color to black */
+  
+    margin-bottom: 40px; /*Adds 40 pixels ofspace under the header so that the main
+                         content is't so close to the navigation */
+  }
+  header h1 {
+    color: #fff;
+  
+    text-align: center;
+    font-size: 52px;
+  
+    margin: 0;
+  
+    padding-top: 20px;
+  }
+  
+  header nav{
+    display: flex;
+  
+    justify-content: center;
+  }
+  
+  header nav ul{
+    display: flex;
+  
+    padding-left: 0;
+  
+    list-style: none;
+    
+  }
+  
+  header nav ul li a{
+    color: #fff;
+  
+    text-decoration: none;
+  
+    margin: 0 20px 0 0;
+
+    font-family: 'Montserrat'  
+}
+  
+  header nav ul li:last-child a{
+  margin-right: 0;
+  }
+  
+  
+  /*When a web browser is larger than 600 pixels,
+    apply these rules*/
+  
+    @media all and (min-width: 600px){
+      header{
+        display: flex;
+  
+        justify-content: space-between;
+  
+        padding: 0 30px;
+      }
+  
+      header h1{
+        margin: 14px 0;
+        font-size: 48px;  
+        padding-top: 0;
+      }
+  
+      header nav{
+        margin-top: 8px;
+      }
+  
+      header nav ul li a:hover{
+        color: #bdbdbd;
+      }
+    }
